@@ -8,9 +8,17 @@
   <sprites name="sprites">
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprHouse</sprite>
+    <sprite>sprites\sprHouseOpen</sprite>
+    <sprite>sprites\sprGhostCostume</sprite>
+    <sprite>sprites\sprFrankensteinCostume</sprite>
+    <sprite>sprites\sprVampireCostume</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\printLog.gml</script>
+    <script>scripts\scrSpriteForCostume.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objHouse</object>
