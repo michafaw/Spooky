@@ -5,9 +5,25 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprPlayer</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\objPlayer</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\roomMain</room>
+  </rooms>
+  <constants number="6">
+    <constant name="PLAYERSTATE_IDLE">0</constant>
+    <constant name="PLAYERSTATE_MOVING">1</constant>
+    <constant name="PLAYERSTATE_SCARING">2</constant>
+    <constant name="COSTUME_GHOST">0</constant>
+    <constant name="COSTUME_VAMPIRE">1</constant>
+    <constant name="COSTUME_FRANKENSTEIN">2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
