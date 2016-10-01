@@ -9,9 +9,11 @@
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprHouse</sprite>
     <sprite>sprites\sprHouseOpen</sprite>
+    <sprite>sprites\sprHouseScared</sprite>
     <sprite>sprites\sprGhostCostume</sprite>
     <sprite>sprites\sprFrankensteinCostume</sprite>
     <sprite>sprites\sprVampireCostume</sprite>
+    <sprite>sprites\sprDoormat</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,17 +24,21 @@
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objHouse</object>
+    <object>objects\objFrontDoor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
   </rooms>
-  <constants number="6">
+  <constants number="9">
     <constant name="PLAYERSTATE_IDLE">0</constant>
     <constant name="PLAYERSTATE_MOVING">1</constant>
     <constant name="PLAYERSTATE_SCARING">2</constant>
     <constant name="COSTUME_GHOST">0</constant>
     <constant name="COSTUME_VAMPIRE">1</constant>
     <constant name="COSTUME_FRANKENSTEIN">2</constant>
+    <constant name="HOUSESTATE_NORMAL">0</constant>
+    <constant name="HOUSESTATE_OPEN">1</constant>
+    <constant name="HOUSESTATE_SCARED">2</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
