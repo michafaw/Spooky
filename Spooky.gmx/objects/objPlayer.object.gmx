@@ -143,8 +143,16 @@ depth = -y
 newState = PLAYERSTATE_MOVING;
 destination[0] = mouse_x;
 destination[1] = mouse_y;
-direction = point_direction(x, y, destination[0], destination[1]); // Keep motion planning from keeping momentum from previous movement
-show_debug_message("New destination: (" + string(destination[0]) + ", " + string(destination[1]) + ")");
+
+// If point is inside a house, go to the point in front of the house
+var houseInstance = collision_point(destination[0], destination[1], objHouse, true, false);
+if(houseInstance != noone) {
+  destination[0] = houseInstance.frontOfHouse[0];
+  destination[1] = houseInstance.frontOfHouse[1];
+}
+
+direction = point_direction(x, y, destination[0], destination[1]); // Keep motion planning from keeping momentum of previous movement
+printLog("New destination: (" + string(destination[0]) + ", " + string(destination[1]) + ")");
 </string>
           </argument>
         </arguments>
