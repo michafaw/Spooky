@@ -118,6 +118,7 @@ if(state != newState) {
 newState = PLAYERSTATE_MOVING;
 destination[0] = mouse_x;
 destination[1] = mouse_y;
+direction = point_direction(x, y, destination[0], destination[1]); // Keep motion planning from keeping momentum from previous movement
 show_debug_message("New destination: (" + string(destination[0]) + ", " + string(destination[1]) + ")");
 </string>
           </argument>
