@@ -13,6 +13,7 @@
     <sprite>sprites\sprGhostCostume</sprite>
     <sprite>sprites\sprFrankensteinCostume</sprite>
     <sprite>sprites\sprVampireCostume</sprite>
+    <sprite>sprites\sprWerewolfCostume</sprite>
     <sprite>sprites\sprDoormat</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -29,13 +30,14 @@
   <rooms name="rooms">
     <room>rooms\roomMain</room>
   </rooms>
-  <constants number="9">
+  <constants number="10">
     <constant name="PLAYERSTATE_IDLE">0</constant>
     <constant name="PLAYERSTATE_MOVING">1</constant>
     <constant name="PLAYERSTATE_SCARING">2</constant>
     <constant name="COSTUME_GHOST">0</constant>
     <constant name="COSTUME_VAMPIRE">1</constant>
     <constant name="COSTUME_FRANKENSTEIN">2</constant>
+    <constant name="COSTUME_WEREWOLF">3</constant>
     <constant name="HOUSESTATE_NORMAL">0</constant>
     <constant name="HOUSESTATE_OPEN">1</constant>
     <constant name="HOUSESTATE_SCARED">2</constant>
