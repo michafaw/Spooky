@@ -30,6 +30,7 @@
     <background>background\bgNeighborhood1</background>
     <background>background\bgGameOverWin</background>
     <background>background\bgGameOverTime</background>
+    <background>background\bgTitleScreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
