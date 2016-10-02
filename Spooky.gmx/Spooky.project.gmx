@@ -18,6 +18,11 @@
     <sprite>sprites\sprMummyCostume</sprite>
     <sprite>sprites\sprDoormat</sprite>
     <sprite>sprites\sprCandyCorn</sprite>
+    <sprite>sprites\sprGhostSelector</sprite>
+    <sprite>sprites\sprFrankensteinSelector</sprite>
+    <sprite>sprites\sprVampireSelector</sprite>
+    <sprite>sprites\sprWerewolfSelector</sprite>
+    <sprite>sprites\sprMummySelector</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgNeighborhood1</background>
@@ -27,11 +32,21 @@
     <script>scripts\printLog.gml</script>
     <script>scripts\scrSpriteForCostume.gml</script>
     <script>scripts\scrSetHouseState.gml</script>
+    <script>scripts\scrClickIsLegalLocation.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objHouse</object>
     <object>objects\objFrontDoor</object>
+    <object>objects\objPlayerIndicator</object>
+    <objects name="Costume Selectors">
+      <object>objects\objCostumeSelector</object>
+      <object>objects\objGhostSelector</object>
+      <object>objects\objFrankensteinSelector</object>
+      <object>objects\objVampireSelector</object>
+      <object>objects\objWerewolfSelector</object>
+      <object>objects\objMummySelector</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>

@@ -59,6 +59,11 @@
     <instance objName="objHouse" x="138" y="541" name="inst_435E29FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHouse" x="709" y="338" name="inst_8C78C52D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHouse" x="659" y="542" name="inst_9D4F3EFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMummySelector" x="748" y="12" name="inst_BB77BB08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWerewolfSelector" x="703" y="11" name="inst_312016C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objVampireSelector" x="654" y="8" name="inst_CB65D398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFrankensteinSelector" x="606" y="7" name="inst_ABFE0AEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGhostSelector" x="559" y="12" name="inst_A762ECFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
