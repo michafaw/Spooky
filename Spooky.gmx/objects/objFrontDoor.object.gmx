@@ -75,7 +75,20 @@ depth = -myHouse.y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>printLog("Collided with player");
+            <string>/// Open house door and trigger scare
+
+switch (myHouse.state) {
+  case HOUSESTATE_NORMAL:
+    myHouse.newState = HOUSESTATE_OPEN;
+    printLog("Player opening door.");
+    break;
+  case HOUSESTATE_OPEN:
+    if(myHouse.costumeHate == other.currentCostume) {
+      printLog("Player scared house.");
+      myHouse.newState = HOUSESTATE_SCARED;
+    }
+    break;
+}
 </string>
           </argument>
         </arguments>

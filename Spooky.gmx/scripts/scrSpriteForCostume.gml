@@ -15,6 +15,9 @@ switch(costume) {
   case COSTUME_WEREWOLF:
     return sprWerewolfCostume;
     break;
+  case COSTUME_MUMMY:
+    return sprMummyCostume;
+    break;
   default:
     return sprGhostCostume;
     break;

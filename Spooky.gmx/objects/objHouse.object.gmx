@@ -29,12 +29,14 @@
 
 // state = HOUSESTATE_NORMAL, HOUSESTATE_OPEN, HOUSESTATE_SCARED
 state = HOUSESTATE_NORMAL;
-costumeLove = COSTUME_VAMPIRE;
-costumeHate = COSTUME_GHOST;
+newState = state;
+costumeHate = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY);
+do {
+  costumeLove = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY);
+} until(costumeLove != costumeHate);
 
 frontDoor = instance_create(x, y+20, objFrontDoor);
 frontDoor.myHouse = self.id;
-
 frontOfHouse[0] = frontDoor.x;
 frontOfHouse[1] = frontDoor.y;
 </string>
@@ -60,6 +62,138 @@ frontOfHouse[1] = frontDoor.y;
             <string>/// Update depth based on y position
 
 depth = -y;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Change from SCARED state to CLOSED state
+
+newState = HOUSESTATE_CLOSED;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Return from OPEN state to NORMAL
+
+newState = HOUSESTATE_NORMAL;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Update state
+if(state != newState) {
+  // Handle changing into particular states
+  switch (newState) {
+    case HOUSESTATE_NORMAL:
+      sprite_index = sprHouse;
+      alarm[0] = -1;
+      break;
+    case HOUSESTATE_OPEN:
+      sprite_index = sprHouseOpen;
+      alarm[0] = room_speed;
+      break;
+    case HOUSESTATE_SCARED:
+      sprite_index = sprHouseOpen;
+      alarm[0] = -1;
+      alarm[1] = room_speed;
+      // Play scream --  Micha TODO
+      // Show thumbs up --  Micha TODO
+      
+      break;
+    case HOUSESTATE_CLOSED:
+      sprite_index = sprHouseScared;
+      alarm[0] = -1;
+      alarm[1] = -1;
+      
+      // Remove doormat
+      with(frontDoor) {
+        instance_destroy();
+      }
+      frontDoor = noone;
+      break;
+  }
+     
+  state = newState;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw costumeHate/costumeLove
+
+draw_text_colour(x, y, string(costumeHate) + "/" + string(costumeLove), c_white, c_white, c_white, c_white, 1.0);
 </string>
           </argument>
         </arguments>
