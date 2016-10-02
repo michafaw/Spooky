@@ -18,7 +18,6 @@ with(house) {
       alarm[0] = -1;
       alarm[1] = scaredTimerLength;
       // Play scream --  Micha TODO
-      // Show thumbs up --  Micha TODO
       break;
     case HOUSESTATE_CLOSED:
       sprite_index = sprHouseScared;

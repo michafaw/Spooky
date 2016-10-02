@@ -34,7 +34,7 @@ newState = state;
 destination[0] = 400;
 destination[1] = 300;
 
-currentCostume = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY);
+currentCostume = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY, COSTUME_LUMBERJACK);
 
 minimumIdleTime = room_speed/4;
 getTiredTime = room_speed*3;
@@ -91,7 +91,7 @@ newState = PLAYERSTATE_IDLE;
             <kind>1</kind>
             <string>/// Set destination to arbitrary location, including houses
 
-var location = choose(noone, noone, noone, objHouse);
+var location = choose(noone, noone, objHouse);
 
 if(location = objHouse) {
   location = scrGetRandomOpenHouse();
@@ -204,31 +204,6 @@ if(state != newState) {
             <string>/// Adjust depth based on player position
 
 depth = -y
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-
-draw_text_colour(x, y, string(currentCostume), c_white, c_white, c_white, c_white, 1.0);
 </string>
           </argument>
         </arguments>

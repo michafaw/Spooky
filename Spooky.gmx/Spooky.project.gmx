@@ -18,6 +18,7 @@
     <sprite>sprites\sprVampireCostume</sprite>
     <sprite>sprites\sprWerewolfCostume</sprite>
     <sprite>sprites\sprMummyCostume</sprite>
+    <sprite>sprites\sprLumberjackCostume</sprite>
     <sprite>sprites\sprDoormat</sprite>
     <sprite>sprites\sprCandyCorn</sprite>
     <sprite>sprites\sprGhostSelector</sprite>
@@ -25,7 +26,9 @@
     <sprite>sprites\sprVampireSelector</sprite>
     <sprite>sprites\sprWerewolfSelector</sprite>
     <sprite>sprites\sprMummySelector</sprite>
+    <sprite>sprites\sprLumberjackSelector</sprite>
     <sprite>sprites\sprTree</sprite>
+    <sprite>sprites\sprScaredIndicator</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgNeighborhood1</background>
@@ -54,12 +57,14 @@
       <object>objects\objVampireSelector</object>
       <object>objects\objWerewolfSelector</object>
       <object>objects\objMummySelector</object>
+      <object>objects\objLumberjackSelector</object>
     </objects>
     <object>objects\objInitializeControl</object>
     <object>objects\objTitleControl</object>
     <object>objects\objGameOverControl</object>
     <object>objects\objMainControl</object>
     <object>objects\objTree</object>
+    <object>objects\objScaredIndicator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
@@ -68,15 +73,16 @@
     <room>rooms\roomGameOverWin</room>
     <room>rooms\roomGameOverLoss</room>
   </rooms>
-  <constants number="12">
+  <constants number="13">
     <constant name="PLAYERSTATE_IDLE">0</constant>
     <constant name="PLAYERSTATE_MOVING">1</constant>
     <constant name="PLAYERSTATE_SCARING">2</constant>
     <constant name="COSTUME_GHOST">0</constant>
-    <constant name="COSTUME_VAMPIRE">1</constant>
-    <constant name="COSTUME_FRANKENSTEIN">2</constant>
+    <constant name="COSTUME_FRANKENSTEIN">1</constant>
+    <constant name="COSTUME_VAMPIRE">2</constant>
     <constant name="COSTUME_WEREWOLF">3</constant>
     <constant name="COSTUME_MUMMY">4</constant>
+    <constant name="COSTUME_LUMBERJACK">5</constant>
     <constant name="HOUSESTATE_NORMAL">0</constant>
     <constant name="HOUSESTATE_OPEN">1</constant>
     <constant name="HOUSESTATE_SCARED">2</constant>

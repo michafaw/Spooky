@@ -31,9 +31,9 @@ openDoorTimerLength = room_speed;
 scaredTimerLength = room_speed;
 
 // Set costume hate/love
-costumeHate = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY);
+costumeHate = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY, COSTUME_LUMBERJACK);
 do {
-  costumeLove = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY);
+  costumeLove = choose(COSTUME_GHOST, COSTUME_FRANKENSTEIN, COSTUME_VAMPIRE, COSTUME_WEREWOLF, COSTUME_MUMMY, COSTUME_LUMBERJACK);
 } until(costumeLove != costumeHate);
 
 // state = HOUSESTATE_NORMAL, HOUSESTATE_OPEN, HOUSESTATE_SCARED
@@ -45,6 +45,8 @@ frontDoor = instance_create(x, y+18, objFrontDoor);
 frontDoor.myHouse = self.id;
 frontOfHouse[0] = frontDoor.x;
 frontOfHouse[1] = frontDoor.y;
+
+scaredIndicator = noone;
 </string>
           </argument>
         </arguments>
@@ -188,31 +190,6 @@ if(state != newState) {
             <string>/// Reset hasVisitor state
 
 hasVisitor = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw costumeHate/costumeLove
-
-draw_text_colour(x, y, string(costumeHate) + "/" + string(costumeLove), c_white, c_white, c_white, c_white, 1.0);
 </string>
           </argument>
         </arguments>
