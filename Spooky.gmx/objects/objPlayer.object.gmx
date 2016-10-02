@@ -38,6 +38,12 @@ currentCostume = COSTUME_GHOST;
 
 legHeight = 21;
 
+costumeOffset[0] = 0;
+costumeOffset[1] = -legHeight;
+myCostume = instance_create(x + costumeOffset[0], y + costumeOffset[1], objCostume);
+myCostume.sprite_index = scrSpriteForCostume(currentCostume);
+myCostume.image_speed = 5.0/room_speed;
+
 </string>
           </argument>
         </arguments>
@@ -145,6 +151,32 @@ depth = -y
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Update costume position + depth
+
+myCostume.x = x + costumeOffset[0];
+myCostume.y = y + costumeOffset[1];
+
+myCostume.depth = depth - 1
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="6" enumb="53">
       <action>
@@ -208,7 +240,7 @@ if(scrClickIsLegalLocation(mouse_x, mouse_y)) {
 draw_self();
 
 // Costume
-draw_sprite(scrSpriteForCostume(currentCostume), 0, x, y - legHeight);
+//draw_sprite(scrSpriteForCostume(currentCostume), 0, x, y - legHeight);
 </string>
           </argument>
         </arguments>

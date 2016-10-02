@@ -55,6 +55,7 @@ costume = COSTUME_FRANKENSTEIN;
 var newCostume = costume;
 with(objPlayer) {
   currentCostume = newCostume;
+  myCostume.sprite_index = scrSpriteForCostume(currentCostume);
 }
 </string>
           </argument>

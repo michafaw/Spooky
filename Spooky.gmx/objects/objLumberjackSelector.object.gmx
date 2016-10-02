@@ -55,6 +55,7 @@ costume = COSTUME_LUMBERJACK;
 var newCostume = costume;
 with(objPlayer) {
   currentCostume = newCostume;
+  myCostume.sprite_index = scrSpriteForCostume(currentCostume);
 }
 </string>
           </argument>

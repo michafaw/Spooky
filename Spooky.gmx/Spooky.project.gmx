@@ -69,6 +69,7 @@
     <object>objects\objTree</object>
     <object>objects\objScaredIndicator</object>
     <object>objects\objHowToPlayText</object>
+    <object>objects\objCostume</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
