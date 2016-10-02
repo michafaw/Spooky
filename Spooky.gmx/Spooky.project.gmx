@@ -44,6 +44,9 @@
     <script>scripts\scrClickIsLegalLocation.gml</script>
     <script>scripts\scrGetRandomOpenHouse.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fontCambriaBold12</font>
+  </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objCostumedKid</object>
@@ -65,6 +68,7 @@
     <object>objects\objMainControl</object>
     <object>objects\objTree</object>
     <object>objects\objScaredIndicator</object>
+    <object>objects\objHowToPlayText</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
