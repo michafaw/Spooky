@@ -17,6 +17,7 @@
     <sprite>sprites\sprWerewolfCostume</sprite>
     <sprite>sprites\sprMummyCostume</sprite>
     <sprite>sprites\sprDoormat</sprite>
+    <sprite>sprites\sprCandyCorn</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgNeighborhood1</background>
@@ -25,6 +26,7 @@
   <scripts name="scripts">
     <script>scripts\printLog.gml</script>
     <script>scripts\scrSpriteForCostume.gml</script>
+    <script>scripts\scrSetHouseState.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
