@@ -21,5 +21,6 @@
   <height>50</height>
   <frames>
     <frame index="0">images\sprWerewolfCostume_0.png</frame>
+    <frame index="1">images\sprWerewolfCostume_1.png</frame>
   </frames>
 </sprite>
