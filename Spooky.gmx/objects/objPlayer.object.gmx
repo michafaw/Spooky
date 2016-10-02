@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Create instance variables
 
-moveSpeed = 4;
+moveSpeed = 3;
 
 state = PLAYERSTATE_IDLE;
 newState = state;

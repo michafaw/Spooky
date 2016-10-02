@@ -70,6 +70,16 @@
     <instance objName="objTree" x="756" y="76" name="inst_D1836695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTree" x="780" y="464" name="inst_4301281B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTree" x="20" y="568" name="inst_48D3C513" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="221" y="295" name="inst_DA37C937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="263" y="254" name="inst_85C5EA57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="418" y="196" name="inst_4DC23CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="493" y="541" name="inst_84A57E6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="258" y="391" name="inst_16227F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="485" y="250" name="inst_A64C6051" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="574" y="319" name="inst_F566DDBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="518" y="383" name="inst_F71F0E5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="377" y="347" name="inst_3153202D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCostumedKid" x="259" y="513" name="inst_1A9F6C5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

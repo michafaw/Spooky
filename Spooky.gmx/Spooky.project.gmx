@@ -39,6 +39,7 @@
     <script>scripts\scrSpriteForCostume.gml</script>
     <script>scripts\scrSetHouseState.gml</script>
     <script>scripts\scrClickIsLegalLocation.gml</script>
+    <script>scripts\scrGetRandomOpenHouse.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
