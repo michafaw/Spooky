@@ -21,5 +21,8 @@
   <height>37</height>
   <frames>
     <frame index="0">images\sprNormalLegs_0.png</frame>
+    <frame index="1">images\sprNormalLegs_1.png</frame>
+    <frame index="2">images\sprNormalLegs_2.png</frame>
+    <frame index="3">images\sprNormalLegs_3.png</frame>
   </frames>
 </sprite>

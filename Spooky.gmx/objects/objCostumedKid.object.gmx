@@ -47,6 +47,8 @@ myCostume = instance_create(x + costumeOffset[0], y + costumeOffset[1], objCostu
 myCostume.sprite_index = scrSpriteForCostume(currentCostume);
 myCostume.image_speed = 5.0/room_speed;
 
+image_speed = 0;
+
 alarm[0] = 1;
 </string>
           </argument>
@@ -183,6 +185,13 @@ if(state != newState) {
   } else if(newState == PLAYERSTATE_MOVING) {
     alarm[0] = -1;
     alarm[1] = getTiredTime;
+  }
+  
+  if(newState == PLAYERSTATE_MOVING)
+    image_speed = 7.0/room_speed;
+  else if(newState == PLAYERSTATE_IDLE) {
+    image_speed = 0.0;
+    image_index = 0;
   }
 
   state = newState;
