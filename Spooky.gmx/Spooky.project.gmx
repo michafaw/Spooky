@@ -6,7 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprPlayer</sprite>
+    <sprite>sprites\sprNormalLegs</sprite>
+    <sprite>sprites\sprMonsterLegs</sprite>
     <sprite>sprites\sprHouse</sprite>
     <sprite>sprites\sprHouseOpen</sprite>
     <sprite>sprites\sprHouseScared</sprite>
@@ -16,7 +17,9 @@
     <sprite>sprites\sprWerewolfCostume</sprite>
     <sprite>sprites\sprDoormat</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgNeighborhood1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\printLog.gml</script>
